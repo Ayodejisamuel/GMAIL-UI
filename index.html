@@ -1,0 +1,2183 @@
+   <!-- @format -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gmail UI Clone</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.tailwindcss.com/2.2.15/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body  class="overflow-x-hidden bg-slate-50 lg:overflow-y-hidden ">
+    <!-- Start of top navbar -->
+    
+    <div
+      class="hidden lg:flex fixed top-0 left-0 bg-slate-50 right-0 z-20 text-gray-500  py-3 flex items-center justify-between"
+    >
+          <!-- Navbar content goes here  for laptop -->
+
+    <div class=" pr-24   justify-start">
+      <div  class=" flex items-center cursor-pointer">
+        <span
+          class="material-symbols-outlined ml-6 mr-2 cursor-pointer hover:bg-gray-200 hover:rounded-full p-1"
+          >menu</span
+        >
+        <img
+        src="images/gmail-logo.jpg"
+        class="object-cover ml- h-7 cursor-pointer"
+          alt="gmail"
+        />
+      </div>
+    </div>
+
+
+    <div style="flex:1" class="hidden lg:flex focus:bg-white">     
+       <div 
+        class="flex flex-grow  h-10 items-center flex-1 rounded-3xl p-4 py-4 bg-blue-100 "
+      >
+        <span
+          class="material-symbols-outlined text-gray-500 px-3 text-xl cursor-pointer"
+          >search</span
+        >
+        <input
+          class=" bg-transparent outline-none text-xl text-gray-500 font-semibold w-full"
+          type="search"
+          placeholder="Search mail"
+        />
+        <span
+          class="material-symbols-outlined cursor-pointer text-2xl text-gray-500 hover:bg-gray-200 p-2 rounded hover:rounded-full"
+          >tune</span
+        >
+      </div>
+    </div>
+
+
+  <div class="hidden lg:flex 4 justify-end flex">
+      <div  class="flex pr-2 pl-64">
+        <span
+          class="material-symbols-outlined cursor-pointer p-2 hover:bg-gray-200 hover:rounded-full"
+          >help_outline</span
+        >
+        <span
+          class="material-symbols-outlined cursor-pointer p-2 hover:bg-gray-200 hover:rounded-full"
+          >settings</span
+        >
+        <span
+          class="material-symbols-outlined cursor-pointer p-2 hover:bg-gray-200 hover:rounded-full"
+          >apps</span
+        >
+        <span
+          class="material-symbols-outlined cursor-pointer text-3xl  hover:bg-gray-200 hover:rounded-full"
+          >account_circle</span
+        >
+      </div>
+   </div>
+    </div>
+
+  <!-- Mobile navbar start --> 
+   <div class=" relative z-20 lg:hidden justify-center  items-center">
+    
+<div class=" justify-left relative top-10 bg-white overflow-y-hidden overflow-x-hidden lg:hidden">
+  <div class="w-full flex-1 flex relative lg:hidden top-0 w-full bg-white">
+    <div class="flex h-10 w-full justify-center ">
+      <span
+         class="material-symbols-outlined relative top-2  px-2 text-gray-500 cursor-pointer"
+              >search</span
+            >
+            <input
+              class=" outline-none  text-gray-500 font-semibold w-full"
+              type="search"
+              placeholder="Search"
+            />
+    </div>
+  </div>
+
+  <div class="  h-24  justify-center border-b border-3xl border-stone-200">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-white"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+ 
+  <div class="  h-24  justify-center border-b border-3xl border-stone-300">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-transparent"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+ 
+
+  <div class="  h-24  justify-center border-b border-3xl border-stone-300">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-transparent"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="  h-24  justify-center border-b border-3xl border-stone-300">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-transparent"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+
+  
+
+  <div class="  h-24  justify-center border-b border-3xl border-stone-300">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-transparent"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+
+  
+  <div class="  h-24  justify-center border-b border-3xl border-stone-300">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-transparent"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+
+  
+  <div class="  h-24  justify-center border-b border-3xl border-stone-300">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-transparent"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+
+  
+  <div class="  h-24  justify-center border-b border-3xl border-stone-300">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-transparent"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+
+  
+  <div class="  h-24  justify-center border-b border-3xl border-stone-300">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-transparent"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+
+  
+  <div class="  h-24  justify-center border-b border-3xl border-stone-300">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-transparent"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+
+  
+  <div class="  h-24  justify-center border-b border-3xl border-stone-300">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-transparent"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+  
+  <div class="  h-24  justify-center border-b border-3xl border-stone-300">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-transparent"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+
+  
+  <div class="  h-24  justify-center border-b border-3xl border-stone-300">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-transparent"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+
+  
+
+
+  <div class="  h-24  justify-center border-b border-3xl border-stone-300">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-transparent"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+ 
+  <div class="  h-24  justify-center border-b border-3xl border-stone-300">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-transparent"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+ 
+  <div class="  h-24  justify-center border-b border-3xl border-stone-300">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-transparent"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+ 
+  <div class="  h-24  justify-center border-b border-3xl border-stone-300">
+    <div class="flex ">
+    <div class="mx-2 mt-8 justify-center items-center">
+      <input
+      type="checkbox"
+      class="w-4 h-4 justify-center items-center text-gray-500 hover:text-black bg-transparent"
+    />
+
+  </div>
+    <div class="flex py-3 flex-col lg:flex-row">
+      <div>
+      <h1 class="text-lg  ">Dating Boss</h1>
+    </div>
+ 
+
+     <div  class="relative overflow-hidden flex-col lg:flex-row ">
+      <p class=" flex"  >Start doing this to have better conversation</p>
+      <span
+      style="
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    "   
+     class=" flex">I was at a dinner this morning and overheanextd the this morning and overheanextd the </span>
+  
+     </div>     
+ 
+    </div>
+
+    <div class="absolute right-0 flex pt-3  flex-col  lg:flex-row justify-between ">
+      <p class="justify-start">10pm</p>
+      <span
+      class=" justify-end absolute top-12 material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l"
+      >star</span
+    >
+    </div>
+  </div>
+  </div>
+
+ 
+
+
+  <!-- fixed navbar for mobile -->
+<div class=" fixed w-full top-0 py-4 h-10 text-gray-500 flex flex-row justify-between bg-stone-200 items-center justify-center  ">
+  <a href="homepage.html"> <div> 
+    <span
+  class="material-symbols-outlined  cursor-pointer hover:bg-gray-200 hover:rounded-full m-1"
+  >menu</span
+>
+<span
+class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-full"
+>refresh</span
+>
+</div>
+
+<a href="homepage.html"><div class="justify-center items-center my-3">
+  <span class="text-lg">Primary</span>
+</div></a>
+
+<div class="bg-slate-600 text-white justify-center items-center m-1">
+  <span class="material-symbols-outlined cursor-pointer justify-center mx-1 items-center "
+  >create</span
+  >
+</div></a>
+
+    
+</div> 
+
+
+
+<!-- Mobile navbar end  -->
+ 
+
+ </div> 
+
+         
+</div> 
+    <!-- mobile body ends -->
+    <!-- End of top navbar -->
+     
+    <!-- Start of Main Body -->
+
+    <div style=""  class="flex  h-screen top-24 relative" >
+      <!-- Start of sidebar -->
+      <!--  pt-16 left-0 h-screen w-1/4 mr-16 fixed" -->
+
+      <div style="" class="hidden lg:block  fixed top-16   h-screen ">
+        <button
+         class="bg-sky-200 my-4
+           font-semibold text-sm text-black py-4 mt-1
+            rounded-2xl px-4 ml-2 flex justify-between 
+            items-center hover:shadow-lg shadow-bottom hover:ring-1"
+        >
+          <span class="material-symbols-outlined cursor-pointer ml- mr-3"
+            >create</span
+          >
+
+          Compose
+        </button>
+
+        <div
+          class="text-sm cursor-pointer hover:bg-gray-300 rounded-3xl flex justify-left bg-sky-100 py-1 text-black"
+        >
+          <span
+            class="material-symbols-outlined cursor-pointer pl-6 mr-5 text-sm"
+            >inbox</span
+          >
+          <h3 class="font-bold">Inbox</h3>
+        </div>
+
+        <div
+          class="text-sm cursor-pointer hover:bg-gray-300 rounded-3xl flex justify-left text-gray-500 py-1"
+        >
+          <span
+            class="material-symbols-outlined cursor-pointer pl-6 mr-5 text-sm"
+            >star</span
+          >
+          <h3 class="font-bold">Starred</h3>
+        </div>
+
+        <div
+          class="text-sm cursor-pointer hover:bg-gray-300 rounded-3xl flex justify-left text-gray-500 py-1"
+        >
+          <span
+            class="material-symbols-outlined cursor-pointer pl-6 mr-5 text-sm"
+            >access_time</span
+          >
+          <h3 class="font-bold">Snooze</h3>
+        </div>
+
+        <div
+          class="text-sm cursor-pointer hover:bg-gray-300 rounded-3xl flex justify-left text-gray-500 py-1"
+        >
+          <span
+            class="material-symbols-outlined cursor-pointer pl-6 mr-5 text-sm"
+            >near_me</span
+          >
+          <h3 class="font-bold">Sent</h3>
+        </div>
+
+        <div
+          class="text-sm cursor-pointer hover:bg-gray-300 rounded-3xl flex justify-left text-gray-500 py-1"
+        >
+          <span
+            class="material-symbols-outlined cursor-pointer pl-6 mr-5 text-sm"
+            >note</span
+          >
+          <h3 class="font-bold">Draft</h3>
+        </div>
+
+        <div
+          class="text-sm cursor-pointer hover:bg-gray-300 rounded-3xl flex justify-left text-gray-500 py-1"
+        >
+          <span
+            class="material-symbols-outlined cursor-pointer pl-6 mr-5 text-sm"
+            >arrow_drop_down</span
+          >
+          <h3 class="font-bold">More</h3>
+        </div>
+
+        <div
+          class="flex mt-3 cursor-pointer hover:bg-gray-300 justify-left rounded-3xl bg-transparent pl-1 hover:bg-gray-300 border-3xl items-center"
+        >
+          <h3
+            class="text-xl flex cursor-pointer justify-center items-center pl-6 mr-5"
+          >
+            Labels
+          </h3>
+          <span class="material-symbols-outlined ml-28 mr-2 text-black text-xl"
+            >add</span
+          >
+        </div>
+      </div>
+
+<!-- sticky section -->
+
+<!-- flex flex-1 relative ml-56  top-16 -->
+      <div style="" class="hidden lg:block lg:ml-64 lg:mr-12 flex-1  bg-white overflow-y-auto justify-between" >
+         
+        <div
+          class="lg:flex fixed left-64 top-0 pt-3   right-12  top-12 z-20 bg-transparent justify-between"
+      >
+
+      <div  class="flex flex-1 relative justify-between bg-white  pb-1 bg-white flex-1  mb-3 rounded-t-3xl  ">
+        <div  class=" flex bg-white   rounded-t-3xl flex-1 justify-between ">
+        <!-- first container -->
+        <div class="flex  rounded-t-3xl ">
+        <input
+            type="checkbox"
+            class="pl-3 relative top-3 left-3 h-4  form-checkbox text-gray-500 text-3xl cursor-pointer bottom-5 hover:bg-gray-300 rounded-full p-2"
+
+          />
+          <span
+            class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-full p-2"
+            >arrow_drop_down</span
+          >
+
+          <span
+            class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-full p-2"
+            >refresh</span
+          >
+
+          <span
+            class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-full p-2"
+            >more_vert</span
+          >
+        </div>
+
+
+        <!-- second container-->
+
+ <div class=" justify-left flex rounded-t-3xl">
+          <span
+            class="material-symbols-outlined cursor-pointer text-gray-500 text-md hover:bg-gray-300 hover:rounded-full p-2"
+            >chevron_left</span
+          > 
+
+          <span
+            class="material-symbols-outlined cursor-pointer text-gray-500 text-md hover:bg-gray-300 hover:rounded-full p-2"
+            >chevron_right</span
+          >
+          <span
+            class="material-symbols-outlined cursor-pointer text-gray-500 text-md hover:bg-gray-300 rounded-l p-2"
+            >keyboard</span
+          > 
+
+          <span
+            class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-l p-2"
+            >expand_more</span
+          >
+        </div>  
+      </div>
+
+      
+      </div>
+
+         </div>
+
+
+          <!-- promotion starts -->
+          <!--  flex  relative  bg-blue-100 top-20 cursor-pointer bg-white-->
+            <div class="relative  bg-white  hidden lg:block ">
+        <div class="flex flex-1 overflow-y-auto  relative z-10 cursor-pointer bg-white">
+          <div
+            class=" flex text-blue-500 border-b-4 border-blue-500  flex-1 hover:bg-gray-300 items-center"
+          >
+            <span
+              class="material-symbols-outlined cursor-pointer text-blue-500 text-md hover:bg-gray-300 rounded-l p-2"
+            >
+              inbox</span
+            >
+            <h4 class="ml-1">Primary</h4>
+          </div>
+
+          <div
+            class="flex flex-1 text-gray-700 p-2 w-1/5   hover:bg-gray-100 items-center"
+          >
+            <span
+              class="material-symbols-outlined cursor-pointer hover:text-green-500 text-md hover:bg-gray-100 rounded-l p-2"
+              >local_offer</span
+            >
+            <h4 class="ml-1">Promotions</h4>
+          </div>
+
+          <div
+            class="flex flex-1 text-gray-700 p-2 w-1/5 hover:bg-gray-100 items-center"
+          >
+            <span
+              class="material-symbols-outlined cursor-pointer text-gray-700 text-md hover:bg-gray-100 rounded-l p-2"
+              >people</span
+            >
+            <h4 class="ml-3">Social</h4>
+          </div>
+
+          <div
+            class="flex flex-1  text-gray-700 p-2 w-1/5 hover:bg-gray-100 items-center"
+          >
+            <span
+              class="material-symbols-outlined cursor-pointer text-gray-700 text-md hover:bg-gray-100 rounded-l p-2"
+              >update</span
+            >
+            <h4 class="ml-3">Updates</h4>
+          </div>
+
+          <div
+            class="flex flex-1 box-border text-gray-700 p-2 w-1/5 hover:bg-gray-100 items-center"
+          >
+            <span
+              class="material-symbols-outlined cursor-pointer text-gray-700 text-md hover:bg-gray-100 rounded-l p-2"
+              >forum</span
+            >
+            <h4 class="ml-2">Forums</h4>
+          </div>
+        </div>
+
+<!-- promotion ends -->
+ <!-- Email row list Starts -->
+ <div class="relative bg-blue-50 hidden lg:block ">
+  <!--Email row start  -->
+  <div  class="hidden  lg:block">
+    
+      <div
+        class="flex flex-1 items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+      >
+        <input
+          type="checkbox"
+          class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+        />
+        <span
+          class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+          >star</span
+        >
+        <div class="flex items-center w-2/12 ">
+          <h3 style=" 
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;" class="">Faith Ishola</h3>
+  
+        </div>
+  
+        <div class="flex w-8/12 ">
+          <h4
+            style="
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            "
+            class=""
+          >
+            Fwd: 11 new jobs on 25th may 2023
+            <span class="text-gray-700"
+              >- Medical Laboratory Scientist at Demyhealth
+              Clinic</span
+            >
+          </h4>
+        </div>
+        <p style="flex: 0.1" class="" id="time">10pm</p>
+      </div>
+
+      
+      <div >
+        <div
+          class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+        >
+          <input
+            type="checkbox"
+            class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+          />
+          <span
+            class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+            >star</span
+          >
+          <div class="flex w-2/12 ">
+            <h3 style=" 
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;" class="">The Dating Bosss </h3>
+    
+          </div>
+    
+          <div class="flex w-8/12 ">
+            <h4
+              style="
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              "
+              class=""
+            >
+              Fwd: 11 new jobs on 25th may 2023
+              <span class="text-gray-700"
+                >- Medical Laboratory Scientist at Demyhealth
+                Clinic</span
+              >
+            </h4>
+          </div>
+          <p style="flex: 0.1" class="" id="time">10pm</p>
+        </div>
+    
+
+    <div>
+      <div
+        class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+      >
+        <input
+          type="checkbox"
+          class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+        />
+        <span
+          class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+          >star</span
+        >
+        <div class="flex w-2/12 ">
+          <h3 style=" 
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;" class="">The Dating Boss </h3>
+  
+        </div>
+  
+        <div class="flex w-8/12 ">
+          <h4
+            style="
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            "
+            class=""
+          >
+            Fwd: 11 new jobs on 25th may 2023
+            <span class="text-gray-700"
+              >- Medical Laboratory Scientist at Demyhealth
+              Clinic</span
+            >
+          </h4>
+        </div>
+        <p style="flex: 0.1" class="" id="time">10pm</p>
+      </div>
+  
+     
+      
+      <div>
+        <div
+          class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+        >
+          <input
+            type="checkbox"
+            class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+          />
+          <span
+            class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+            >star</span
+          >
+          <div class="flex w-2/12 ">
+            <h3 style=" 
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;" class="">The Dating Boss </h3>
+    
+          </div>
+    
+          <div class="flex w-8/12 ">
+            <h4
+              style="
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              "
+              class=""
+            >
+              Fwd: 11 new jobs on 25th may 2023
+              <span class="text-gray-700"
+                >- Medical Laboratory Scientist at Demyhealth
+                Clinic</span
+              >
+            </h4>
+          </div>
+          <p style="flex: 0.1" class="" id="time">10pm</p>
+        </div>
+    
+        <div>
+          <div
+            class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+          >
+            <input
+              type="checkbox"
+              class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+            />
+            <span
+              class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+              >star</span
+            >
+            <div class="flex w-2/12 ">
+              <h3 style=" 
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;" class="">The Dating Boss </h3>
+      
+            </div>
+      
+            <div class="flex w-8/12 ">
+              <h4
+                style="
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                "
+                class=""
+              >
+                Fwd: 11 new jobs on 25th may 2023
+                <span class="text-gray-700"
+                  >- Medical Laboratory Scientist at Demyhealth
+                  Clinic</span
+                >
+              </h4>
+            </div>
+            <p style="flex: 0.1" class="" id="time">10pm</p>
+          </div>
+      
+     
+          
+          <div>
+            <div
+              class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+            >
+              <input
+                type="checkbox"
+                class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+              />
+              <span
+                class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                >star</span
+              >
+              <div class="flex w-2/12 ">
+                <h3 style=" 
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;" class="">The Dating Boss </h3>
+        
+              </div>
+        
+              <div class="flex w-8/12 ">
+                <h4
+                  style="
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  "
+                  class=""
+                >
+                  Fwd: 11 new jobs on 25th may 2023
+                  <span class="text-gray-700"
+                    >- Medical Laboratory Scientist at Demyhealth
+                    Clinic</span
+                  >
+                </h4>
+              </div>
+              <p style="flex: 0.1" class="" id="time">10pm</p>
+            </div>
+        
+     
+            
+            <div>
+              <div
+                class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+              >
+                <input
+                  type="checkbox"
+                  class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+                />
+                <span
+                  class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                  >star</span
+                >
+                <div class="flex w-2/12 ">
+                  <h3 style=" 
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;" class="">The Dating Boss </h3>
+          
+                </div>
+          
+                <div class="flex w-8/12 ">
+                  <h4
+                    style="
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                    "
+                    class=""
+                  >
+                    Fwd: 11 new jobs on 25th may 2023
+                    <span class="text-gray-700"
+                      >- Medical Laboratory Scientist at Demyhealth
+                      Clinic</span
+                    >
+                  </h4>
+                </div>
+                <p style="flex: 0.1" class="" id="time">10pm</p>
+              </div>
+          
+     
+              
+              <div>
+                <div
+                  class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+                >
+                  <input
+                    type="checkbox"
+                    class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+                  />
+                  <span
+                    class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                    >star</span
+                  >
+                  <div class="flex w-2/12 ">
+                    <h3 style=" 
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;" class="">The Dating Boss </h3>
+            
+                  </div>
+            
+                  <div class="flex w-8/12 ">
+                    <h4
+                      style="
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                      "
+                      class=""
+                    >
+                      Fwd: 11 new jobs on 25th may 2023
+                      <span class="text-gray-700"
+                        >- Medical Laboratory Scientist at Demyhealth
+                        Clinic</span
+                      >
+                    </h4>
+                  </div>
+                  <p style="flex: 0.1" class="" id="time">10pm</p>
+                </div>
+            
+     
+                
+                <div>
+                  <div
+                    class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+                  >
+                    <input
+                      type="checkbox"
+                      class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+                    />
+                    <span
+                      class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                      >star</span
+                    >
+                    <div class="flex w-2/12 ">
+                      <h3 style=" 
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;" class="">The Dating Boss </h3>
+              
+                    </div>
+              
+                    <div class="flex w-8/12 ">
+                      <h4
+                        style="
+                          overflow: hidden;
+                          white-space: nowrap;
+                          text-overflow: ellipsis;
+                        "
+                        class=""
+                      >
+                        Fwd: 11 new jobs on 25th may 2023
+                        <span class="text-gray-700"
+                          >- Medical Laboratory Scientist at Demyhealth
+                          Clinic</span
+                        >
+                      </h4>
+                    </div>
+                    <p style="flex: 0.1" class="" id="time">10pm</p>
+                  </div>
+              
+     
+                  
+                  <div>
+                    <div
+                      class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+                    >
+                      <input
+                        type="checkbox"
+                        class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+                      />
+                      <span
+                        class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                        >star</span
+                      >
+                      <div class="flex w-2/12 ">
+                        <h3 style=" 
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;" class="">The Dating Boss </h3>
+                
+                      </div>
+                
+                      <div class="flex w-8/12 ">
+                        <h4
+                          style="
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                          "
+                          class=""
+                        >
+                          Fwd: 11 new jobs on 25th may 2023
+                          <span class="text-gray-700"
+                            >- Medical Laboratory Scientist at Demyhealth
+                            Clinic</span
+                          >
+                        </h4>
+                      </div>
+                      <p style="flex: 0.1" class="" id="time">10pm</p>
+                    </div>
+                
+     
+                    
+                    <div>
+                      <div
+                        class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+                      >
+                        <input
+                          type="checkbox"
+                          class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+                        />
+                        <span
+                          class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                          >star</span
+                        >
+                        <div class="flex w-2/12 ">
+                          <h3 style=" 
+                          overflow: hidden;
+                          white-space: nowrap;
+                          text-overflow: ellipsis;" class="">The Dating Boss </h3>
+                  
+                        </div>
+                  
+                        <div class="flex w-8/12 ">
+                          <h4
+                            style="
+                              overflow: hidden;
+                              white-space: nowrap;
+                              text-overflow: ellipsis;
+                            "
+                            class=""
+                          >
+                            Fwd: 11 new jobs on 25th may 2023
+                            <span class="text-gray-700"
+                              >- Medical Laboratory Scientist at Demyhealth
+                              Clinic</span
+                            >
+                          </h4>
+                        </div>
+                        <p style="flex: 0.1" class="" id="time">10pm</p>
+                      </div>
+                  
+     
+                      
+                      <div>
+                        <div
+                          class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+                        >
+                          <input
+                            type="checkbox"
+                            class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+                          />
+                          <span
+                            class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                            >star</span
+                          >
+                          <div class="flex w-2/12 ">
+                            <h3 style=" 
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;" class="">The Dating Boss </h3>
+                    
+                          </div>
+                    
+                          <div class="flex w-8/12 ">
+                            <h4
+                              style="
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                              "
+                              class=""
+                            >
+                              Fwd: 11 new jobs on 25th may 2023
+                              <span class="text-gray-700"
+                                >- Medical Laboratory Scientist at Demyhealth
+                                Clinic</span
+                              >
+                            </h4>
+                          </div>
+                          <p style="flex: 0.1" class="" id="time">10pm</p>
+                        </div>
+                    
+     
+                        
+                        <div>
+                          <div
+                            class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+                          >
+                            <input
+                              type="checkbox"
+                              class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+                            />
+                            <span
+                              class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                              >star</span
+                            >
+                            <div class="flex w-2/12 ">
+                              <h3 style=" 
+                              overflow: hidden;
+                              white-space: nowrap;
+                              text-overflow: ellipsis;" class="">The Dating Boss </h3>
+                      
+                            </div>
+                      
+                            <div class="flex w-8/12 ">
+                              <h4
+                                style="
+                                  overflow: hidden;
+                                  white-space: nowrap;
+                                  text-overflow: ellipsis;
+                                "
+                                class=""
+                              >
+                                Fwd: 11 new jobs on 25th may 2023
+                                <span class="text-gray-700"
+                                  >- Medical Laboratory Scientist at Demyhealth
+                                  Clinic</span
+                                >
+                              </h4>
+                            </div>
+                            <p style="flex: 0.1" class="" id="time">10pm</p>
+                          </div>
+                      
+     
+                          
+                          <div>
+                            <div
+                              class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+                            >
+                              <input
+                                type="checkbox"
+                                class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+                              />
+                              <span
+                                class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                                >star</span
+                              >
+                              <div class="flex w-2/12 ">
+                                <h3 style=" 
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;" class="">The Dating Boss </h3>
+                        
+                              </div>
+                        
+                              <div class="flex w-8/12 ">
+                                <h4
+                                  style="
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                  "
+                                  class=""
+                                >
+                                  Fwd: 11 new jobs on 25th may 2023
+                                  <span class="text-gray-700"
+                                    >- Medical Laboratory Scientist at Demyhealth
+                                    Clinic</span
+                                  >
+                                </h4>
+                              </div>
+                              <p style="flex: 0.1" class="" id="time">10pm</p>
+                            </div>
+                        
+     
+                            
+                            <div>
+                              <div
+                                class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+                              >
+                                <input
+                                  type="checkbox"
+                                  class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+                                />
+                                <span
+                                  class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                                  >star</span
+                                >
+                                <div class="flex w-2/12 ">
+                                  <h3 style=" 
+                                  overflow: hidden;
+                                  white-space: nowrap;
+                                  text-overflow: ellipsis;" class="">The Dating Boss </h3>
+                          
+                                </div>
+                          
+                                <div class="flex w-8/12 ">
+                                  <h4
+                                    style="
+                                      overflow: hidden;
+                                      white-space: nowrap;
+                                      text-overflow: ellipsis;
+                                    "
+                                    class=""
+                                  >
+                                    Fwd: 11 new jobs on 25th may 2023
+                                    <span class="text-gray-700"
+                                      >- Medical Laboratory Scientist at Demyhealth
+                                      Clinic</span
+                                    >
+                                  </h4>
+                                </div>
+                                <p style="flex: 0.1" class="" id="time">10pm</p>
+                              </div>
+                          
+     
+                              
+                              <div>
+                                <div
+                                  class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+                                >
+                                  <input
+                                    type="checkbox"
+                                    class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+                                  />
+                                  <span
+                                    class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                                    >star</span
+                                  >
+                                  <div class="flex w-2/12 ">
+                                    <h3 style=" 
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;" class="">The Dating Boss </h3>
+                            
+                                  </div>
+                            
+                                  <div class="flex w-8/12 ">
+                                    <h4
+                                      style="
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                      "
+                                      class=""
+                                    >
+                                      Fwd: 11 new jobs on 25th may 2023
+                                      <span class="text-gray-700"
+                                        >- Medical Laboratory Scientist at Demyhealth
+                                        Clinic</span
+                                      >
+                                    </h4>
+                                  </div>
+                                  <p style="flex: 0.1" class="" id="time">10pm</p>
+                                </div>
+                            
+     
+                                
+                                <div>
+                                  <div
+                                    class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+                                  >
+                                    <input
+                                      type="checkbox"
+                                      class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+                                    />
+                                    <span
+                                      class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                                      >star</span
+                                    >
+                                    <div class="flex w-2/12 ">
+                                      <h3 style=" 
+                                      overflow: hidden;
+                                      white-space: nowrap;
+                                      text-overflow: ellipsis;" class="">The Dating Boss </h3>
+                              
+                                    </div>
+                              
+                                    <div class="flex w-8/12 ">
+                                      <h4
+                                        style="
+                                          overflow: hidden;
+                                          white-space: nowrap;
+                                          text-overflow: ellipsis;
+                                        "
+                                        class=""
+                                      >
+                                        Fwd: 11 new jobs on 25th may 2023
+                                        <span class="text-gray-700"
+                                          >- Medical Laboratory Scientist at Demyhealth
+                                          Clinic</span
+                                        >
+                                      </h4>
+                                    </div>
+                                    <p style="flex: 0.1" class="" id="time">10pm</p>
+                                  </div>
+                              
+     
+                                  
+                                  <div>
+                                    <div
+                                      class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+                                      />
+                                      <span
+                                        class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                                        >star</span
+                                      >
+                                      <div class="flex w-2/12 ">
+                                        <h3 style=" 
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;" class="">The Dating Boss </h3>
+                                
+                                      </div>
+                                
+                                      <div class="flex w-8/12 ">
+                                        <h4
+                                          style="
+                                            overflow: hidden;
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                          "
+                                          class=""
+                                        >
+                                          Fwd: 11 new jobs on 25th may 2023
+                                          <span class="text-gray-700"
+                                            >- Medical Laboratory Scientist at Demyhealth
+                                            Clinic</span
+                                          >
+                                        </h4>
+                                      </div>
+                                      <p style="flex: 0.1" class="" id="time">10pm</p>
+                                    </div>
+                                
+     
+                                    
+                                    <div>
+                                      <div
+                                        class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+                                      >
+                                        <input
+                                          type="checkbox"
+                                          class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+                                        />
+                                        <span
+                                          class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                                          >star</span
+                                        >
+                                        <div class="flex w-2/12 ">
+                                          <h3 style=" 
+                                          overflow: hidden;
+                                          white-space: nowrap;
+                                          text-overflow: ellipsis;" class="">The Dating Boss </h3>
+                                  
+                                        </div>
+                                  
+                                        <div class="flex w-8/12 ">
+                                          <h4
+                                            style="
+                                              overflow: hidden;
+                                              white-space: nowrap;
+                                              text-overflow: ellipsis;
+                                            "
+                                            class=""
+                                          >
+                                            Fwd: 11 new jobs on 25th may 2023
+                                            <span class="text-gray-700"
+                                              >- Medical Laboratory Scientist at Demyhealth
+                                              Clinic</span
+                                            >
+                                          </h4>
+                                        </div>
+                                        <p style="flex: 0.1" class="" id="time">10pm</p>
+                                      </div>
+                                  
+     
+     
+     <div>
+      <div
+        class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+      >
+        <input
+          type="checkbox"
+          class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+        />
+        <span
+          class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+          >star</span
+        >
+        <div class="flex w-2/12 ">
+          <h3 style=" 
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;" class="">The Dating Boss </h3>
+  
+        </div>
+  
+        <div class="flex w-8/12 ">
+          <h4
+            style="
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            "
+            class=""
+          >
+            Fwd: 11 new jobs on 25th may 2023
+            <span class="text-gray-700"
+              >- Medical Laboratory Scientist at Demyhealth
+              Clinic</span
+            >
+          </h4>
+        </div>
+        <p style="flex: 0.1" class="" id="time">10pm</p>
+      </div>
+  
+      <div>
+        <div
+          class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+        >
+          <input
+            type="checkbox"
+            class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+          />
+          <span
+            class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+            >star</span
+          >
+          <div class="flex w-2/12 ">
+            <h3 style=" 
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;" class="">The Dating Boss </h3>
+    
+          </div>
+    
+          <div class="flex w-8/12 ">
+            <h4
+              style="
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              "
+              class=""
+            >
+              Fwd: 11 new jobs on 25th may 2023
+              <span class="text-gray-700"
+                >- Medical Laboratory Scientist at Demyhealth
+                Clinic</span
+              >
+            </h4>
+          </div>
+          <p style="flex: 0.1" class="" id="time">10pm</p>
+        </div>
+    
+        <div>
+          <div
+            class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+          >
+            <input
+              type="checkbox"
+              class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+            />
+            <span
+              class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+              >star</span
+            >
+            <div class="flex w-2/12 ">
+              <h3 style=" 
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;" class="">The Dating Boss </h3>
+      
+            </div>
+      
+            <div class="flex w-8/12 ">
+              <h4
+                style="
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                "
+                class=""
+              >
+                Fwd: 11 new jobs on 25th may 2023
+                <span class="text-gray-700"
+                  >- Medical Laboratory Scientist at Demyhealth
+                  Clinic</span
+                >
+              </h4>
+            </div>
+            <p style="flex: 0.1" class="" id="time">10pm</p>
+          </div>
+      
+     
+          
+          <div>
+            <div
+              class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+            >
+              <input
+                type="checkbox"
+                class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+              />
+              <span
+                class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                >star</span
+              >
+              <div class="flex w-2/12 ">
+                <h3 style=" 
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;" class="">The Dating Boss </h3>
+        
+              </div>
+        
+              <div class="flex w-8/12 ">
+                <h4
+                  style="
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  "
+                  class=""
+                >
+                  Fwd: 11 new jobs on 25th may 2023
+                  <span class="text-gray-700"
+                    >- Medical Laboratory Scientist at Demyhealth
+                    Clinic</span
+                  >
+                </h4>
+              </div>
+              <p style="flex: 0.1" class="" id="time">10pm</p>
+            </div>
+        
+     
+            
+            <div>
+              <div
+                class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+              >
+                <input
+                  type="checkbox"
+                  class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+                />
+                <span
+                  class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                  >star</span
+                >
+                <div class="flex w-2/12 ">
+                  <h3 style=" 
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;" class="">The Dating Boss </h3>
+          
+                </div>
+          
+                <div class="flex w-8/12 ">
+                  <h4
+                    style="
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                    "
+                    class=""
+                  >
+                    Fwd: 11 new jobs on 25th may 2023
+                    <span class="text-gray-700"
+                      >- Medical Laboratory Scientist at Demyhealth
+                      Clinic</span
+                    >
+                  </h4>
+                </div>
+                <p style="flex: 0.1" class="" id="time">10pm</p>
+              </div>
+          
+     
+              <div>
+                <div
+                  class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+                >
+                  <input
+                    type="checkbox"
+                    class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+                  />
+                  <span
+                    class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                    >star</span
+                  >
+                  <div class="flex w-2/12 ">
+                    <h3 style=" 
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;" class="">The Dating Boss </h3>
+            
+                  </div>
+            
+                  <div class="flex w-8/12 ">
+                    <h4
+                      style="
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                      "
+                      class=""
+                    >
+                      Fwd: 11 new jobs on 25th may 2023
+                      <span class="text-gray-700"
+                        >- Medical Laboratory Scientist at Demyhealth
+                        Clinic</span
+                      >
+                    </h4>
+                  </div>
+                  <p style="flex: 0.1" class="" id="time">10pm</p>
+                </div>
+            
+     
+                
+                <div>
+                  <div
+                    class="flex items-center border-b border-stone-200 border-b-1 pt-1 h-8  py-1 px-4"
+                  >
+                    <input
+                      type="checkbox"
+                      class="w-4 h-4 text-gray-500 hover:text-black px-4 bg-transparent"
+                    />
+                    <span
+                      class="material-symbols-outlined cursor-pointer hover:text-black bg-transparent text-gray-700 text-md px-4 hover:bg-gray-300 rounded-l p-2"
+                      >star</span
+                    >
+                    <div class="flex w-2/12 ">
+                      <h3 style=" 
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;" class="">The Dating Boss </h3>
+              
+                    </div>
+              
+                    <div class="flex w-8/12 ">
+                      <h4
+                        style="
+                          overflow: hidden;
+                          white-space: nowrap;
+                          text-overflow: ellipsis;
+                        "
+                        class=""
+                      >
+                        Fwd: 11 new jobs on 25th may 2023
+                        <span class="text-gray-700"
+                          >- Medical Laboratory Scientist at Demyhealth
+                          Clinic</span
+                        >
+                      </h4>
+                    </div>
+                    <p style="flex: 0.1" class="" id="time">10pm</p>
+                  </div>
+              
+                   
+     
+
+ 
+                 <!-- Email row Ends -->
+                 
+</div>
+<!-- Email list row Ends -->
+
+<!-- div for promotion wrapper end -->
+</div>
+ <!-- third div -->
+      <div style="flex:0.5" class="hidden lg:block  h-screen" >
+      <div class="flex fixed z-200 h-screen bg-slate-50 text-gray-500  flex-col items-center justify- right-0 top-20">
+      <div class="pb-6">
+        <span
+        class="material-symbols-outlined cursor-pointer text- hover:bg-gray-200 hover:rounded-full"
+        >calendar_today</span
+       >
+      </div>
+      <div>
+      <span
+        class="material-symbols-outlined cursor-pointer p-2 hover:bg-gray-200 hover:rounded-full"
+        >video_call</span
+      >
+    </div>
+
+    <div class="py-6">
+           <span
+        class="material-symbols-outlined cursor-pointer p-2 hover:bg-gray-200 hover:rounded-full"
+        >person</span
+      >
+    </div>
+
+    <div class="py-6">
+      <span
+   class="material-symbols-outlined cursor-pointer p-2 hover:bg-gray-200 hover:rounded-full"
+   >add</span
+ >
+</div>
+ <div>
+      <span
+        class="material-symbols-outlined cursor-pointer p-2 hover:bg-gray-200 hover:rounded-full"
+        >account_circle</span
+      >
+
+ </div>
+      </div>
+
+    </div>
+  </div>
+
+
+      </div>
+
+      </div>
+
+     <!-- end -->
+    </div>
+      
+    </div> 
+    
+    
+
+    <!-- End of Main Body -->
+    
+    <script src="script.js"></script>
+  </body>
+</html>
