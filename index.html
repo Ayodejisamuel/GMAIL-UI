@@ -1,4 +1,4 @@
-   <!-- @format -->
+    <!-- @format -->
 
 <!DOCTYPE html>
 
@@ -19,15 +19,14 @@
     />
   </head>
 
+
   <body  class="overflow-x-hidden bg-slate-50 lg:overflow-y-hidden ">
     <!-- Start of top navbar -->
-    
     <div
       class="hidden lg:flex fixed top-0 left-0 bg-slate-50 right-0 z-20 text-gray-500  py-3 flex items-center justify-between"
     >
-          <!-- Navbar content goes here  for laptop -->
-
-    <div class=" pr-24   justify-start">
+          <!-- Navbar content goes here  for laptop --> 
+             <div class=" pr-24   justify-start">
       <div  class=" flex items-center cursor-pointer">
         <span
           class="material-symbols-outlined ml-6 mr-2 cursor-pointer hover:bg-gray-200 hover:rounded-full p-1"
@@ -65,10 +64,20 @@
 
   <div class="hidden lg:flex 4 justify-end flex">
       <div  class="flex pr-2 pl-64">
-        <span
-          class="material-symbols-outlined cursor-pointer p-2 hover:bg-gray-200 hover:rounded-full"
+        <span id="iconbutton"
+          class="selected  material-symbols-outlined cursor-pointer p-2 hover:bg-gray-200 hover:rounded-full"
           >help_outline</span
         >
+        
+        <div id="hidden" class="absolute  right-0 mt-2 w-48 bg-white rounded-md shadow-lg hidden">
+          <div class="py-1">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 1</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 2</a>
+            <!-- Add more options as needed -->
+          </div>
+        </div>
+        
+
         <span
           class="material-symbols-outlined cursor-pointer p-2 hover:bg-gray-200 hover:rounded-full"
           >settings</span
@@ -77,10 +86,14 @@
           class="material-symbols-outlined cursor-pointer p-2 hover:bg-gray-200 hover:rounded-full"
           >apps</span
         >
-        <span
+
+          <img src="/images/ayodeji picture.jpeg" alt="profile picture "class="rounded-full object-contain w-10 ml-2 cursor-pointer  border-4 border-transparent hover:border-slate-200" >
+
+
+        <!-- <span
           class="material-symbols-outlined cursor-pointer text-3xl  hover:bg-gray-200 hover:rounded-full"
           >account_circle</span
-        >
+        > -->
       </div>
    </div>
     </div>
@@ -800,7 +813,7 @@
 
 
   <!-- fixed navbar for mobile -->
-<div class=" fixed w-full top-0 py-4 h-10 text-gray-500 flex flex-row justify-between bg-stone-200 items-center justify-center  ">
+<div class=" fixed w-full top- py-4 h-10 text-gray-500 flex flex-row justify-between bg-stone-200 items-center justify-center  ">
   <a href="homepage.html"> <div> 
     <span
   class="material-symbols-outlined  cursor-pointer hover:bg-gray-200 hover:rounded-full m-1"
@@ -839,11 +852,11 @@ class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 
      
     <!-- Start of Main Body -->
 
-    <div style=""  class="flex  h-screen top-24 relative" >
+    <div  class="flex  h-screen top-24 relative" >
       <!-- Start of sidebar -->
       <!--  pt-16 left-0 h-screen w-1/4 mr-16 fixed" -->
 
-      <div style="" class="hidden lg:block  fixed top-16   h-screen ">
+      <div  class="hidden lg:block  fixed top-16   h-screen ">
         <button
          class="bg-sky-200 my-4
            font-semibold text-sm text-black py-4 mt-1
@@ -934,13 +947,13 @@ class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 
 <!-- sticky section -->
 
 <!-- flex flex-1 relative ml-56  top-16 -->
-      <div style="" class="hidden lg:block lg:ml-64 lg:mr-12 flex-1  bg-white overflow-y-auto justify-between" >
+      <div  class="hidden lg:block lg:ml-64 lg:mr-12 flex-1  bg-white overflow-y-auto justify-between" >
          
         <div
           class="lg:flex fixed left-64 top-0 pt-3   right-12  top-12 z-20 bg-transparent justify-between"
       >
 
-      <div  class="flex flex-1 relative justify-between bg-white  pb-1 bg-white flex-1  mb-3 rounded-t-3xl  ">
+      <div  class="flex flex-1 relative justify-between bg-white  pb-2 bg-white flex-1  mb-3 rounded-t-3xl  ">
         <div  class=" flex bg-white   rounded-t-3xl flex-1 justify-between ">
         <!-- first container -->
         <div class="flex  rounded-t-3xl ">
@@ -983,6 +996,7 @@ class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 
             >keyboard</span
           > 
 
+
           <span
             class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-l p-2"
             >expand_more</span
@@ -998,7 +1012,7 @@ class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 
 
           <!-- promotion starts -->
           <!--  flex  relative  bg-blue-100 top-20 cursor-pointer bg-white-->
-            <div class="relative  bg-white  hidden lg:block ">
+            <div class="relative top-4 bg-white  hidden lg:block ">
         <div class="flex flex-1 overflow-y-auto  relative z-10 cursor-pointer bg-white">
           <div
             class=" flex text-blue-500 border-b-4 border-blue-500  flex-1 hover:bg-gray-300 items-center"
