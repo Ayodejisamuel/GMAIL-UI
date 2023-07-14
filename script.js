@@ -1,4 +1,4 @@
-// 
+ // 
 
 document.addEventListener("DOMContentLoaded", function() {
     let moreIcon = document.getElementById("moreIcon");
@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let arrowDownDiv = document.getElementById("arrowdowndiv")
     let helpIcon = document.getElementById("helpicon")
     let helpDiv = document.getElementById("helpdiv")
+    let accountImg = document.getElementById("accountimg")
+    let accountDiv = document.getElementById("accountdiv")
 
 
   
@@ -24,6 +26,12 @@ moreIcon.addEventListener("click", () => {
 
   helpIcon.addEventListener('click', () => {
     helpDiv.classList.toggle("hidden")
+  });
+
+
+  accountImg.addEventListener('click', () => {
+    accountDiv.classList.toggle('hidden')
   })
-     ;
+
+
   });
