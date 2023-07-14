@@ -98,14 +98,14 @@
           >apps</span
         >
 
-          <img id="accountimg" src="images/ayodeji.jpg" alt="profile picture "class="rounded-full object-contain w-10 ml-2 cursor-pointer  border-4 border-transparent hover:border-slate-200" >
+          <img id="accountimg" src="/images/ayodeji.jpg" alt="profile picture "class="selecting rounded-full object-contain w-10 ml-2 cursor-pointer  border-4 border-transparent hover:border-slate-200" >
 
  
  
-          <div id="accountdiv" class="hidden absolute  top-12 right-4 flex drop-shadow-md py-2 flex-col w-96 rounded-3xl bg-blue-50">            
+          <div id="accountdiv" class="selected hidden absolute  top-12 right-4 flex drop-shadow-md py-2 flex-col w-96 rounded-3xl bg-blue-50">            
                <div class="flex mx-1 mt- items-center rounded-t-3xl  bg-white">
                   <div class="mx-3 ">
-                    <img src="images/ayodeji.jpg" alt="profile picture "class="rounded-full object-cover w-20 mt-3 ml-1 cursor-pointer  border-4 border-transparent hover:border-slate-200" >
+                    <img src="/images/ayodeji.jpg" alt="profile picture "class="rounded-full object-cover w-20 mt-3 ml-1 cursor-pointer  border-4 border-transparent hover:border-slate-200" >
                   </div>
          
                     <div class="">
@@ -130,6 +130,7 @@
                   <div class="ml-12"><h1 class="font-semibold  text-black">Add another account</h1></div>
 
                 </div>
+                
                   <!-- sign out -->
                 <div class="flex px-3  items-center cursor-pointer hover:bg-blue-100 bg-transparent" >
                   <div>
@@ -175,8 +176,35 @@
 
 
   <!-- Mobile navbar start --> 
-   <div class=" relative z-20 lg:hidden justify-center  items-center">
-    
+   <div class=" relative  lg:hidden justify-center  items-center">
+
+ <div class="fixed cursor-pointer lg:hidden left-0 right-0  z-20 bg-stone-200 flex items-center justify-between">
+      <div>
+       
+
+        <a href="homepage.html"> <span
+          class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-full m-2"
+          >menu</span
+        >  </a>
+
+        <span
+        class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-full m-2"
+        >refresh</span
+      >
+      </div>
+
+      <div>
+        <h1>Primary</h1>
+      </div>
+
+      <div class="bg-red-600 m-1">
+        <span class="material-symbols-outlined p-1 cursor-pointer ml- mr-3"
+        >create</span
+      >
+      </div>
+    </div>
+
+ 
 <div class=" justify-left relative top-10 bg-white overflow-y-hidden overflow-x-hidden lg:hidden">
   <div class="w-full flex-1 flex relative lg:hidden top-0 w-full bg-white">
     <div class="flex h-10 w-full justify-center ">
