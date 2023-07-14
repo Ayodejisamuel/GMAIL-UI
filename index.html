@@ -62,21 +62,32 @@
     </div>
 
 
-  <div class="hidden lg:flex 4 justify-end flex">
+  <div   class="hidden lg:flex 4 justify-end flex">
       <div  class="flex pr-2 pl-64">
-        <span id="iconbutton"
-          class="selected  material-symbols-outlined cursor-pointer p-2 hover:bg-gray-200 hover:rounded-full"
+        <span  id="helpicon"
+          class="  material-symbols-outlined cursor-pointer p-2 hover:bg-gray-200 hover:rounded-full"
           >help_outline</span
         >
         
-        <div id="hidden" class="absolute  right-0 mt-2 w-48 bg-white rounded-md shadow-lg hidden">
-          <div class="py-1">
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 1</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Option 2</a>
-            <!-- Add more options as needed -->
+        <div id="helpdiv"  class="hidden py- top-12 z-20 right-32  bg-white drop-shadow-2xl shadow-md absolute rounded-md w-56 ">
+
+          <div class="text-left pl-8 my-1 hover:bg-gray-200 cursor-pointer"> 
+            <h3 class="   my-1 justify-center items-center text-black" >Help</h3>
           </div>
-        </div>
-        
+
+          <div class="text-left pl-8 my-1 hover:bg-gray-200 cursor-pointer"> 
+            <h3 class="   my-1 justify-center items-center  text-black" >Training</h3>
+          </div>
+
+          <div class="text-left pl-8 my-1 hover:bg-gray-200 cursor-pointer"> 
+            <h3 class="   my-1 justify-center items-center  text-black" >Updates</h3>
+          </div>
+          <hr class=" text-gray-500">
+          <div class="text-left pl-8 my-3 hover:bg-gray-200 cursor-pointer"> 
+            <h3 class="   my-1 justify-center items-center text-black" >Send feedback to Google</h3>
+          </div>
+          
+          </div>
 
         <span
           class="material-symbols-outlined cursor-pointer p-2 hover:bg-gray-200 hover:rounded-full"
@@ -87,16 +98,17 @@
           >apps</span
         >
 
-          <img src="images/ayodeji.jpg" alt="profile picture "class="rounded-full object-contain w-10 ml-2 cursor-pointer  border-4 border-transparent hover:border-slate-200" >
+          <img src="/images/ayodeji.jpg" alt="profile picture "class="rounded-full object-contain w-10 ml-2 cursor-pointer  border-4 border-transparent hover:border-slate-200" >
 
 
-        <!-- <span
-          class="material-symbols-outlined cursor-pointer text-3xl  hover:bg-gray-200 hover:rounded-full"
-          >account_circle</span
-        > -->
+         
+
       </div>
    </div>
     </div>
+
+
+
 
   <!-- Mobile navbar start --> 
    <div class=" relative z-20 lg:hidden justify-center  items-center">
@@ -950,7 +962,7 @@ class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 
       <div  class="hidden lg:block lg:ml-64 lg:mr-12 flex-1  bg-white overflow-y-auto justify-between" >
          
         <div
-          class="lg:flex fixed left-64 top-0 pt-3   right-12  top-12 z-20 bg-transparent justify-between"
+          class="lg:flex fixed left-64 top-0 pt-3   right-12  top-12  z-10 bg-transparent justify-between"
       >
 
       <div  class="flex flex-1 relative justify-between bg-white  pb-2 bg-white flex-1  mb-3 rounded-t-3xl  ">
@@ -962,20 +974,54 @@ class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 
             class="pl-3 relative top-3 left-3 h-4  form-checkbox text-gray-500 text-3xl cursor-pointer bottom-5 hover:bg-gray-300 rounded-full p-2"
 
           />
-          <span
+          <span id="arrowdown"
             class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-full p-2"
             >arrow_drop_down</span
           >
+
+          <div id="arrowdowndiv"  class="hidden py- top-8 z-20 left-0 bg-white drop-shadow-2xl shadow-md absolute rounded-md w-48 ">
+
+            <div class="text-left pl-12 my-1 hover:bg-gray-200 cursor-pointer"> 
+              <h3 class="   my-1 justify-center items-center " >All</h3>
+            </div>
+
+            <div class="text-left pl-12 my-1 hover:bg-gray-200 cursor-pointer"> 
+              <h3 class="   my-1 justify-center items-center" >None</h3>
+            </div>
+
+            <div class="text-left pl-12 my-1 hover:bg-gray-200 cursor-pointer"> 
+              <h3 class="   my-1 justify-center items-center" >Read</h3>
+            </div>
+            <div class="text-left pl-12 my-1 hover:bg-gray-200 cursor-pointer"> 
+              <h3 class="   my-1 justify-center items-center" >Unread</h3>
+            </div>
+            <div class="text-left pl-12 my-1 hover:bg-gray-200 cursor-pointer"> 
+              <h3 class="   my-1 justify-center items-center" >Starred</h3>
+            </div>
+            <div class="text-left pl-12 my-1 hover:bg-gray-200 cursor-pointer"> 
+              <h3 class="   my-1 justify-center items-center" >Unstarred</h3>
+            </div>
+           
+            </div>
 
           <span
             class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-full p-2"
             >refresh</span
           >
 
-          <span
-            class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-full p-2"
+          <span id="moreIcon"
+            class="  material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-full p-2"
             >more_vert</span
           >
+
+          <div id="toggleDiv"  class="hidden py-  top-8 left-32 bg-white drop-shadow-2xl shadow-md absolute rounded-md w-64">
+
+          <div class="text-left pl-12 my-1 hover:bg-gray-200 cursor-pointer"> 
+            <h3 class="   my-1 justify-center items-center" >Mark all as read</h3>
+          </div>
+            <hr class="text-gray-300">
+            <p class="py-3 text-gray-500 text-md italic text-left mx-12 ">Select messages to see more action</p>
+          </div>
         </div>
 
 
@@ -1013,7 +1059,7 @@ class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 
           <!-- promotion starts -->
           <!--  flex  relative  bg-blue-100 top-20 cursor-pointer bg-white-->
             <div class="relative top-4 bg-white  hidden lg:block ">
-        <div class="flex flex-1 overflow-y-auto  relative z-10 cursor-pointer bg-white">
+        <div class="flex flex-1 overflow-y-auto  relative z- cursor-pointer bg-white">
           <div
             class=" flex text-blue-500 border-b-4 border-blue-500  flex-1 hover:bg-gray-300 items-center"
           >
