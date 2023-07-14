@@ -98,9 +98,73 @@
           >apps</span
         >
 
-          <img src="images/ayodeji.jpg" alt="profile picture "class="rounded-full object-contain w-10 ml-2 cursor-pointer  border-4 border-transparent hover:border-slate-200" >
+          <img id="accountimg" src="images/ayodeji.jpg" alt="profile picture "class="rounded-full object-contain w-10 ml-2 cursor-pointer  border-4 border-transparent hover:border-slate-200" >
 
+ 
+ 
+          <div id="accountdiv" class="hidden absolute  top-12 right-4 flex drop-shadow-md py-2 flex-col w-96 rounded-3xl bg-blue-50">            
+               <div class="flex mx-1 mt- items-center rounded-t-3xl  bg-white">
+                  <div class="mx-3 ">
+                    <img src="images/ayodeji.jpg" alt="profile picture "class="rounded-full object-cover w-20 mt-3 ml-1 cursor-pointer  border-4 border-transparent hover:border-slate-200" >
+                  </div>
+         
+                    <div class="">
+                    <h1 class="text-black font-semibold">Ayodeji Samuel</h1>
+                    <p class="text-sm text-black">ayodejisamuel80@gmail.com</p>
+                    </div> 
+                </div>
 
+                <div class="flex mx-1 bg-white  cursor-pointer pb-8">
+                  <div class="ml-28 border-black border-[1px] rounded-xl  hover:bg-gray-300 ">
+                    <h1 class="text-black text-sm font-semibold py-2 px-3">Manage your google account</h1>
+                  </div>
+                </div>
+                <hr class=" h-1 mx-1">
+                <div class="flex mx-1  items-center cursor-pointer rounded-b-3xl bg-white hover:bg-blue-100" >
+                  <div>
+                    <span
+                    class="material-symbols-outlined ml-8 text-black    cursor-pointer p-3  hover:rounded-full"
+                    >person_add</span
+                  >
+                  </div>
+                  <div class="ml-12"><h1 class="font-semibold  text-black">Add another account</h1></div>
+
+                </div>
+                  <!-- sign out -->
+                <div class="flex px-3  items-center cursor-pointer hover:bg-blue-100 bg-transparent" >
+                  <div>
+                    <span
+                    class="material-symbols-outlined ml-8 text-black  cursor-pointer p-3 hover:rounded-full"
+                    >exit_to_app</span
+                  >
+                  </div>
+                  <div class="ml-12"><h1 class="font-semibold  text-black">Sign out</h1></div>
+
+                </div>
+
+                <hr class="h-1 mx-3">
+
+              <div class="flex items-center mx-auto">
+                <div class="hover:bg-blue-100">
+                  <p class="text-center text-sm p-1 cursor-pointer" >Privacy Policy</p>
+                </div>
+
+                <div>
+                  <p class="mx-3">.</p>
+                </div>
+
+                <div class="hover:bg-blue-100">
+                  <p class="text-sm p-1 cursor-pointer">Terms of service</p>
+                </div>
+              </div>
+
+              </div>
+
+                <!-- div for add acount -->
+               
+                <hr>
+                <div></div>
+              </div>
          
 
       </div>
@@ -974,12 +1038,14 @@ class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 
             class="pl-3 relative top-3 left-3 h-4  form-checkbox text-gray-500 text-3xl cursor-pointer bottom-5 hover:bg-gray-300 rounded-full p-2"
 
           />
+
+
           <span id="arrowdown"
-            class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-full p-2"
+            class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-full m-2"
             >arrow_drop_down</span
           >
 
-          <div id="arrowdowndiv"  class="hidden py- top-8 z-20 left-0 bg-white drop-shadow-2xl shadow-md absolute rounded-md w-48 ">
+          <div id="arrowdowndiv"  class="hidden py- top-8 z-20 left-0 bg-white drop-shadow-md shadow-md absolute rounded-md w-48 ">
 
             <div class="text-left pl-12 my-1 hover:bg-gray-200 cursor-pointer"> 
               <h3 class="   my-1 justify-center items-center " >All</h3>
@@ -1005,16 +1071,16 @@ class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 
             </div>
 
           <span
-            class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-full p-2"
+            class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-full m-2"
             >refresh</span
           >
 
           <span id="moreIcon"
-            class="  material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-full p-2"
+            class="  material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-full m-2"
             >more_vert</span
           >
 
-          <div id="toggleDiv"  class="hidden py-  top-8 left-32 bg-white drop-shadow-2xl shadow-md absolute rounded-md w-64">
+          <div id="toggleDiv"  class="hidden py-  top-8 left-32 bg-white drop-shadow-md shadow-md absolute rounded-md w-64">
 
           <div class="text-left pl-12 my-1 hover:bg-gray-200 cursor-pointer"> 
             <h3 class="   my-1 justify-center items-center" >Mark all as read</h3>
@@ -1029,22 +1095,22 @@ class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 
 
  <div class=" justify-left flex rounded-t-3xl">
           <span
-            class="material-symbols-outlined cursor-pointer text-gray-500 text-md hover:bg-gray-300 hover:rounded-full p-2"
+            class="material-symbols-outlined cursor-pointer text-gray-500 text-md hover:bg-gray-300 hover:rounded-full m-2"
             >chevron_left</span
           > 
 
           <span
-            class="material-symbols-outlined cursor-pointer text-gray-500 text-md hover:bg-gray-300 hover:rounded-full p-2"
+            class="material-symbols-outlined cursor-pointer text-gray-500 text-md hover:bg-gray-300 hover:rounded-full m-2"
             >chevron_right</span
           >
           <span
-            class="material-symbols-outlined cursor-pointer text-gray-500 text-md hover:bg-gray-300 rounded-l p-2"
+            class="material-symbols-outlined cursor-pointer text-gray-500 text-md hover:bg-gray-300 rounded-l m-2"
             >keyboard</span
           > 
 
 
           <span
-            class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-l p-2"
+            class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 rounded-l m-2"
             >expand_more</span
           >
         </div>  
@@ -1068,12 +1134,14 @@ class="material-symbols-outlined cursor-pointer text-gray-500 hover:bg-gray-300 
             >
               inbox</span
             >
+
             <h4 class="ml-1">Primary</h4>
           </div>
 
           <div
             class="flex flex-1 text-gray-700 p-2 w-1/5   hover:bg-gray-100 items-center"
           >
+
             <span
               class="material-symbols-outlined cursor-pointer hover:text-green-500 text-md hover:bg-gray-100 rounded-l p-2"
               >local_offer</span
